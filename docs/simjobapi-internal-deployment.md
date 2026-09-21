@@ -14,7 +14,7 @@ Document the internal deployment flow for enabling SimJobApi for a customer tena
    - In most cases this is the next available increment.
    - Example: if the previous tenant uses `8084`, use `8085`.
 
-2. Add `SimJobApi_Port` in Delivery Manager.
+2. Add `SimJobApi_Port` in Delivery Manager for the customer.
 
 3. Push the Delivery Manager settings to Octopus.
 
@@ -34,7 +34,7 @@ Document the internal deployment flow for enabling SimJobApi for a customer tena
 6. Add an IIS entry to route incoming traffic to the correct container port.
    - RDP into `vDockerDevApp03`.
    - Open `C:\scripts`.
-   - Run `./launch-IIS.ps1`.
+   - Run `.\launch-IIS.ps1`.
    - In IIS, go to **VDOCKERDEVAPP03 > Sites > Default Web Site > URL Rewrite**.
    - Review an existing customer rule and replicate the same pattern for the current site.
    - Update the rule so it points to the selected SimJobApi port.
