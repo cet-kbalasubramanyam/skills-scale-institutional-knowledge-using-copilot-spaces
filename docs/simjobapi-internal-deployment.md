@@ -22,7 +22,7 @@ Document the internal deployment flow for enabling SimJobApi for a customer tena
    - Make sure **Use SimJobApi** is checked before starting the deployment.
    - Confirm the tenant is set correctly for the deployment.
 
-![Octopus deployment with Use SimJobApi enabled](https://github.com/user-attachments/assets/e9751bb1-5066-4419-8cbf-af0c511522f8)
+![Octopus deployment with Use SimJobApi enabled](https://github.com/user-attachments/assets/1bdacbca-db7e-4e96-be2f-ac4b04c829e9)
 
 5. After the deployment succeeds, verify the container port is exposed on `vDockerDevApp03`.
    - Connect to `vDockerDevApp03`.
